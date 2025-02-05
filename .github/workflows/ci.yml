@@ -33,7 +33,7 @@ jobs:
     uses: kurocado-studio/dev-ops/.github/workflows/workflow.release.yml@main
     secrets: inherit
     with:
-      branch_name: ${{ github.ref }}
+      branch_name: ${{ github.ref_name }}
 
   deploy:
     needs: release
