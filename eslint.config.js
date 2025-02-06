@@ -1,5 +1,3 @@
-/* eslint import/no-default-export: 0 */
-/* eslint import/no-cycle: 0 */
 /**
  * Made with ❤️ and adobo by Kurocado Studio
  * Copyright (c) 2024. All Rights Reserved.
@@ -8,6 +6,9 @@
  *
  * Explore our open-source projects: {@link https://github.com/kurocado-studio}
  */
-import { defineConfig, vitestNestjs } from '@kurocado-studio/qa';
+import {
+  defineESLintConfig,
+  eslintNodeConfig,
+} from '@kurocado-studio/styleguide';
 
-export default defineConfig(vitestNestjs);
+export default defineESLintConfig(eslintNodeConfig);
